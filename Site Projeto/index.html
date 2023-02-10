@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Prototipo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; </a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="https://www.youtube.com/@Yuuko404/videos">YouTube</a>
+        <a href="https://www.instagram.com/akinori404/">Instagram</a>
+        <a href="https://discord.gg/hQQuZyDtuc">Discord</a>
+        <a href="https://github.com/AkinoriKoerich">GitHub</a>
+        <a href="https://www.reddit.com/user/AkinoriKoerich">Reddit</a>
+    </nav>
+    <main id="conteudo">
+        <div class="container">
+            <img src="Site Projeto.jpg">
+
+            <p>
+                <style>p{font-size: 26px; text-align: justify;}</style><b>Nada a Declarar!</b> <br>
+                <br>
+                Apenas um site prototipo eu acho
+                <br><br>
+                Na barra lateral deste site, você encontra todas as informações de contato!
+            </p>
+        </div>
+            <ul>
+                Melhores musicas do mundo (apenas uma, pois não existem outras!)
+                <li>
+                    <a href="https://youtu.be/PbgKEjNBHqM">Nirvana - In Bloom (Remastered)</a>
+                </li>
+            </ul>
+    </main>
+
+    <script>
+        function abrirMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+        }
+
+        function fecharMenu() {
+            document.getElementById('menu').style.width = '0px'
+            document.getElementById('conteudo').style.marginLeft = '0px'
+        }
+    </script>
+</body>
+</html>
